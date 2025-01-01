@@ -5,11 +5,14 @@ import java.io.IOException;
 import java.io.InputStreamReader;
 
 /**
- * A + B
+ *
+ * <p>문제번호 : 1000 </p>
+ * <p>문제이름 : A + B</p>
+ * <p>문제등곱 : 브론즈5</p>
  * @see <a href="https://www.acmicpc.net/problem/1000">백준 A+B</a>
  *
  */
-public class Main1 {
+public class Main1000 {
 
     /**
      * <h2>문제</h2>
@@ -22,14 +25,19 @@ public class Main1 {
      */
     public static void main(String[] args) {
         try (BufferedReader reader = new BufferedReader(new InputStreamReader(System.in))) {
-            String line = reader.readLine();
-            String[] lines = line.split(" ");
-            int a = Integer.parseInt(lines[0]);
-            int b = Integer.parseInt(lines[1]);
-            System.out.println(a + b);
+            int answer = solution(reader);
+            System.out.printf("%d", answer);
         }catch (IOException e) {
             e.printStackTrace();
         }
+    }
+
+    static int solution(BufferedReader reader) throws IOException {
+        String line = reader.readLine();
+        String[] lines = line.split(" ");
+        int a = Integer.parseInt(lines[0]);
+        int b = Integer.parseInt(lines[1]);
+        return a + b;
     }
 
 }
