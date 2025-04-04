@@ -17,10 +17,10 @@ class Main1000Test {
     @DisplayName("테스트 케이스 1")
     void test1 () throws IOException {
         // given
-        BufferedReader reader = TestFileUtil.getReader(Main1000.class, "testcase/tags/mathematics/test1/test_case1.txt");
+        BufferedReader reader = TestFileUtil.getReader("testcase/tags/mathematics/test1/test_case1.txt");
         // when
         int result = solution(reader);
-        String answer = TestFileUtil.getAnswer(Main1000.class, "testcase/tags/mathematics/test1/answer1.txt");
+        String answer = TestFileUtil.getAnswer("testcase/tags/mathematics/test1/answer1.txt");
 
         // then
         assertThat(result).isEqualTo(Integer.parseInt(answer));

@@ -9,17 +9,17 @@ public class TestFileUtil {
         throw new AssertionError();
     }
 
-    private static File getFile(Class<?> className, String fileName) {
-        ClassLoader classLoader = className.getClassLoader();
+    private static File getFile(String fileName) {
+        ClassLoader classLoader = TestFileUtil.class.getClassLoader();
         return new File(Objects.requireNonNull(classLoader.getResource(fileName)).getFile());
     }
 
-    public static BufferedReader getReader(Class<?> className, String fileName) throws FileNotFoundException {
-        return new BufferedReader(new FileReader(getFile(className, fileName)));
+    public static BufferedReader getReader(String fileName) throws FileNotFoundException {
+        return new BufferedReader(new FileReader(getFile( fileName)));
     }
 
-    public static String getAnswer(Class<?> className, String fileName) throws IOException {
-        BufferedReader reader = getReader(className, fileName);
+    public static String getAnswer(String fileName) throws IOException {
+        BufferedReader reader = getReader( fileName);
         StringBuilder stringBuilder = new StringBuilder();
         String readLine = "";
         while (readLine != null) {
