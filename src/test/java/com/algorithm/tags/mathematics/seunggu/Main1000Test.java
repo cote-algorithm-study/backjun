@@ -1,4 +1,4 @@
-package com.algorithm.tags.mathematics;
+package com.algorithm.tags.mathematics.seunggu;
 
 import com.algorithm.common.TestFileUtil;
 import org.junit.jupiter.api.DisplayName;
@@ -7,7 +7,7 @@ import org.junit.jupiter.api.Test;
 import java.io.BufferedReader;
 import java.io.IOException;
 
-import static com.algorithm.tags.mathematics.Main1000.solution;
+import static com.algorithm.tags.mathematics.seunggu.Main1000.solution;
 import static org.assertj.core.api.Assertions.assertThat;
 
 @DisplayName("백준 1000번 A + B")

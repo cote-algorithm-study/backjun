@@ -1,4 +1,4 @@
-package com.algorithm.fastcampus;
+package com.algorithm.fastcampus.seunggu;
 
 import java.io.BufferedReader;
 import java.io.IOException;
