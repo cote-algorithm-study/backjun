@@ -1,4 +1,4 @@
-package com.algorithm.tags.mathematics;
+package com.algorithm.tags.mathematics.seunggu;
 
 import java.io.BufferedReader;
 import java.io.IOException;
